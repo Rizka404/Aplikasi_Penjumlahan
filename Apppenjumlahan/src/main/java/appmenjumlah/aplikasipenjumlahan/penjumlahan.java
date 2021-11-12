@@ -80,9 +80,10 @@ public class penjumlahan extends javax.swing.JFrame {
                             .addComponent(TxtMasukanKedua, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(180, 180, 180)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnHasil)
-                            .addComponent(LblHasil))))
+                        .addComponent(btnHasil))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(172, 172, 172)
+                        .addComponent(LblHasil)))
                 .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

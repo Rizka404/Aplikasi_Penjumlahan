@@ -40,10 +40,11 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnHasil" min="-2" max="-2" attributes="0"/>
-                          <Component id="LblHasil" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="btnHasil" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
+                      <Component id="LblHasil" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="128" max="32767" attributes="0"/>
