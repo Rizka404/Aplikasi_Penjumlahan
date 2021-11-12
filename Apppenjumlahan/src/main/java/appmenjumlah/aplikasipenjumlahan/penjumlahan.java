@@ -9,7 +9,7 @@ package appmenjumlah.aplikasipenjumlahan;
  * @author Administrator
  */
 public class penjumlahan extends javax.swing.JFrame {
-    private String str = "Hasilnya :";
+    private String str = "Hasilnya : ";
     private int A,B;
     /**
      * Creates new form penjumlahan
@@ -54,7 +54,7 @@ public class penjumlahan extends javax.swing.JFrame {
         });
 
         LblHasil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        LblHasil.setText("Hasilnya :");
+        LblHasil.setText("Hasilnya : ");
 
         btnHasil.setText("Hitung");
         btnHasil.addActionListener(new java.awt.event.ActionListener() {
