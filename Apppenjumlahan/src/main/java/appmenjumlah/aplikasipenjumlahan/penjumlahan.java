@@ -9,7 +9,8 @@ package appmenjumlah.aplikasipenjumlahan;
  * @author Administrator
  */
 public class penjumlahan extends javax.swing.JFrame {
-
+    private String str = "Hasilnya :";
+    private int A,B;
     /**
      * Creates new form penjumlahan
      */
@@ -26,21 +27,99 @@ public class penjumlahan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        TxtMasukanPertama = new javax.swing.JTextField();
+        TxtMasukanKedua = new javax.swing.JTextField();
+        LblHasil = new javax.swing.JLabel();
+        btnHasil = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Perhitungan");
+
+        jLabel1.setText("Masukan Angka 1");
+
+        jLabel2.setText("Masukan Angka 2");
+
+        TxtMasukanPertama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtMasukanPertamaActionPerformed(evt);
+            }
+        });
+
+        TxtMasukanKedua.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtMasukanKeduaActionPerformed(evt);
+            }
+        });
+
+        LblHasil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        LblHasil.setText("Hasilnya :");
+
+        btnHasil.setText("Hitung");
+        btnHasil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHasilActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TxtMasukanPertama, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtMasukanKedua, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(180, 180, 180)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnHasil)
+                            .addComponent(LblHasil))))
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(TxtMasukanPertama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(TxtMasukanKedua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(LblHasil)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHasil)
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TxtMasukanPertamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtMasukanPertamaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtMasukanPertamaActionPerformed
+
+    private void TxtMasukanKeduaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtMasukanKeduaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtMasukanKeduaActionPerformed
+
+    private void btnHasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHasilActionPerformed
+        A = Integer.parseInt(TxtMasukanPertama.getText());
+        B = Integer.parseInt(TxtMasukanKedua.getText());
+        int hasil = A + B;
+        LblHasil.setText (str + hasil);
+    }//GEN-LAST:event_btnHasilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +157,11 @@ public class penjumlahan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LblHasil;
+    private javax.swing.JTextField TxtMasukanKedua;
+    private javax.swing.JTextField TxtMasukanPertama;
+    private javax.swing.JButton btnHasil;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
